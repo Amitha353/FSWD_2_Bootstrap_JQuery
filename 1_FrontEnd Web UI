@@ -21,3 +21,71 @@ d. Susy; etc
 Introduction to Bootstrap
 ------------------------
 Most Popular;
+- Responsive web design using mobile-first approach;
+200, Mark Otto , Jacob Thornton;
+
+Getting Strated with Bootstrap
+------------------------------
+3 ways
+----
+i. Download compiled and minified files from -> http://getbootstrap.com
+ii. Less and Sass preprocessor sources;
+iii. Bootstrap CDN
+
+i. followed
+Copiled Bootstrap sources
+------------------------
+bootstrap/
+-css/
+--bootstrap.css
+--bootstrap.min.css
+.
+.
+-js/
+--bootstrap.js
+--bootstrap.min.js
+-fonts/
+--glyhicons..
+.
+.
+
+Using Bootstrap in Prj
+----------------------
+Include these lines in the <head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+Include the CSS files in the <head>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+Include the jquery library and the javascript functions towards the end of the body as Bootstrap is dependent on it.
+It is included before the end of the body, cause the page can be rendered even before the Javascript is actually processed;
+So when the web page is rendered by the browser, it'll first display all the content and then use the Javascript tp restyle the content;
+This make web page loading faster;
+
+Boostrap Container Class
+------------------------
+<div class="container">....</div>
+Container -> Class to hold all the contents of our web page. The container defines the fixed width regions within your web page;
+Inside it contents that will be displayed for your web pages.
+* .container-fluid class allows full width container;
+
+Bootstrap Rows
+---------------
+<div class="row">....</div>
+-> Divides the page into multiple rows.
+-> Rows act as horizontal grouping for columns.
+-> Rows must be inside containers;
+
+Bootstrap Jumbotron -> top line;
+-------------------------
+<div class="jumbotron">....</div>
+- Light-weight, flexible components for showcasing key content; 
+- Can be used outside a container to span the entire screen width;
+
+
+
