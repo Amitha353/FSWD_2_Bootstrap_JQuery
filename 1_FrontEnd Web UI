@@ -59,7 +59,7 @@ Include these lines in the <head>
 
 Include the CSS files in the <head>
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet"> 
 <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
 Include the jquery library and the javascript functions towards the end of the body as Bootstrap is dependent on it.
