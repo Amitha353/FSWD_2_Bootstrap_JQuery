@@ -33,6 +33,8 @@ ii. Less and Sass preprocessor sources;
 iii. Bootstrap CDN
 
 i. followed
+
+http://getbootstrap.com/getting-started/#download -> unzip the zip folder in the required destination;
 Copiled Bootstrap sources
 ------------------------
 bootstrap/
