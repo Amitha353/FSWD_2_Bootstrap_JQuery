@@ -1,0 +1,57 @@
+Navigation and Navigation Bar
+--------------------------------
+-> Websites are rarely single pages;
+-> Need to provide visitors an intuitive means of getting around the website;
+-> Several commonly used navigation patterns used on  websites; -> Navigation Bar;Breadcrumbs, etc;
+
+Information Architecture
+-------------------------
+Information Architecture is an important factor to consider while working with websites navigation;
+
+It is the structure of the system with respect to the way the information is:
+-> Organized;
+-> Labeled,
+-> Navigation methods provided to access the information;
+
+Website Hierarchy
+------------------
+Typically websites are organized in an hierarchial format; Cross navigation;
+
+Navigation Bars
+--------------
+Mostly on top of the web page or on the side;
+Contains links to various pages within the website;
+
+-> Dos and Don'ts
+-----------------
+- simple and use-friendly terms;
+- Standard navigation;
+- Provide indication of the location within the navigation hierarchy;
+- Use standard web conventions; - clicking on the logo takes back to the home page;
+
+Don'ts
+------
+- Haveing to many items;
+- Use generic labels;
+
+Breadcrumbs
+-------------
+Another commonly used pattern for navigation bar -  Breadcrumbs;
+-> Secondary navigation -> Usually placed below the primary navigation and above the content;
+-> Indicator of the current page's location within the navigational hierarchy;
+i. path based : set of steps;
+ii. location based : hierarchy;
+iii. Attribute based : set of choices;price size, color, range, etc;
+
+Other Navigation Aids
+----------------------
+i. Tabs
+ii. Pills
+iii. Pagination
+iv. Dropdowns
+v. Accordion
+vi Tags/ Tag clouds
+vii. Scrollspy
+viii. Affix
+
+
