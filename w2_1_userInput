@@ -41,3 +41,51 @@ Button classes can be applied to three elements:
     <button type="button" class="btn btn-danger btn-block">Danger</button>
   </div>
 </div>
+
+btn + color     +   size    + btn-block -> synrax, can choice among the four
+      btn-primary   btn-lg
+      btn-default   btn-sm
+      btn-success   btn-xs
+      btn-info
+      btn-link
+      btn-warning
+      btn-danger
+      
+Button Groups and Toolbars
+--------------------------
+classes -> btn-toolbar, btn-group, btn-group-vertical, btn-group-justified, btn-group-*;
+------------------------------------------------------------------------------------------------------------------
+Bootstrap Forms
+----------------
+class = "form-horizonal" -> label in the form is displayed on the left side of the data entry field;
+
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text"  class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
+    </div>
+  </div>
+</form>
+
+Inline Form
+-------------------
+class="sr-only" -> screen users only;
+
+<form class="form-inline">
+ <div class="form-group">
+    <label for="firstname" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text"  class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-default">Sign in</button>
+</form>
+
+Input Group with Addons
+------------------------
+<div class="input-group">
+  <div class="input-group-addon">(</div>
+  <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area code">
+  <div class="input-group-addon">)</div>
+</div>
