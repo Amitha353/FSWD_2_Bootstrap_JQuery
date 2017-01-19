@@ -1,0 +1,57 @@
+Bootstrap Tables
+----------------
+Now not used due to the advent of Bootstrap grid;
+-> Bootstrap meant to display tabular data on web;
+-> design and position web content;
+
+<table class="table"></table> -> tabular data;
+Other Bootstrap Tables
+-----------------------
+table-striped;
+table-bordered
+table-hover
+table-condensed -> cuts the cell padding in half;
+table-responsive -> can horizontally scroll tables on screen sizes less than 768px;
+
+Bootstrap Table Contextual classes
+------------------------------
+Individual rows and cells can be colored using classes -> active, success, info, warning and danger;
+<tr class="success">...</tr>
+<td class="danger">...</td>
+
+-------------------------------------------------------------------------------------------------------------------------
+Bootstrap Panels and Wells
+---------------------------
+These two bootstrap components can be used to display content on your webpage;
+
+Panels and Wells are components that help you to highlight some content on your website;
+Use a description list - dl to show the data;
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Facts At a Glance</h3>
+  </div>
+  <div class="panel-body">
+    <dl class="dl-horizontal">
+      <dt>Started</dt>
+      <dd>3 Feb. 2013</dd>
+      <dt>Major Stake Holder</dt>
+      <dd>HK Fine Foods Inc,</dd>
+      <dt>Last Year's Turnover</dt>
+      <dd>$1,250,375</dd>
+      <dt>Employees</dt>
+      <dd>40</dd>
+    </dl>
+  </div>
+</div>
+-------------------------
+Well
+----
+Bounded box with grey background;
+<div class="well well-lg">
+  <blockquote>
+    <p>You better cut the pizza in four pieces because I'm not hungry enough to eat six.</p>
+    <footer>Yogi Berra,
+      <cite title="Source Title">The Wit and Wisdom of Yogi Berra,2014</cite></footer>
+  </blockquote>
+</div>
