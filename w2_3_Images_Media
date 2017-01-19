@@ -1,0 +1,42 @@
+Images and Media
+-----------------
+Bootstrap Image Classes
+-----------------------
+<img src="..." class="..." >
+-> img-responsive for responsive images;
+--- Scales nicely with the parent element;
+
+-> Shage of images:
+i. img-rounded: rounded corners;
+ii. img-circle: circular image;
+iii. img-thumbnail: thumbnail image;
+
+Thumbnail class
+--------------
+<div class="thumbnail">
+  <a href="#">
+    <img class="media-object img-thumbnail" src="img/alberto.png" alt="Alberto Somayya">
+  </a>
+  <div class="caption">
+    <p>Award Winning Three-star Michelin chef</p>
+    <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+  </div>
+</div>
+
+Media Object
+-----------
+<div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+    <img class="media-object img-thumbnail" src="img/alberto.png" alt="Alberto Somayya">
+  </a>
+  </div>
+</div>
+
+Responsive Embed
+---------------
+<div class="embed-responsive embed-respoonsive-16by9">//4by3
+  <iframe class="embed-responsive-item" src="http://....com/..."></iframe>
+</div>
+
+-> A embed-responsive-item to <embed>, <iframe>, <video>, <object>;
