@@ -1,0 +1,92 @@
+BootStrap Javascript Components
+---------------------------------
+Javascript supported components;
+Bootstrap and css classes uses the base class -> btn , form, etc-> and are further modified;
+
+Bootstrap Nav classes
+--------------
+i. navbar-nav
+ii. nav-tabs
+iii. nav-pills;
+
+Bootstrap and Javascript
+-----------------------
+-> Bootstrap's Javascript supposrt is through JS plugins;
+* plugins written based pn Jquery;
+* plugins can be individually included;
+
+Bootstrap JS Components < JQuery < JavaScript;
+Easier
+less flexibles;
+
+Using Bootstrap JS Plugins
+--------------------
+Include JS file at the botton of body;
+jquery.min.js
+bootstrap.min.js
+
+Bootstrap JS Components
+-------------------------
+JS components can all be used without writing a single line of Javascript;
+- data-: attribute (data-toggle, data-spy, etc); - applied to HTML elements;
+- straightforward approach to use plugins;
+- More full fledged API - require JQuery;
+-------------------------------------------------------------------------------------------------------------------------------------
+Tabs, Pills and Tabbed Navigation
+-------------------------------
+Navigation elements;
+tabs
+-------
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active">
+    <a href="#peter">Peter Pan, CEO</a>
+  </li>
+  <li role="presentation">
+    <a href="#danny">Danny Witherspoon, CFO</a>
+  </li>
+  <li role="presentation">
+    <a href="#agumbe">Agumbe Tang, CTO</a>
+  </li>
+  <li role="presentation">
+    <a href="#alberto">Alberto Somayya, Exec. Chef</a>
+  </li>
+</ul>
+
+pills -> turns it into a list of elements;
+------
+<ul class="nav nav-pills" role="tablist">
+  <li role="presentation" class="active">
+    <a href="#peter">Peter Pan, CEO</a>
+  </li>
+  <li role="presentation">
+    <a href="#danny">Danny Witherspoon, CFO</a>
+  </li>
+  <li role="presentation">
+    <a href="#agumbe">Agumbe Tang, CTO</a>
+  </li>
+  <li role="presentation">
+    <a href="#alberto">Alberto Somayya, Exec. Chef</a>
+  </li>
+</ul>
+
+-> nav -justified -> to justify the tabs/pills to stretch the width of the parent with each element 
+sharing its proportion of the width;
+
+-> disabled class -> disable elements;
+-> nav-stacked -> pills can be stacked vertically;
+
+Tab Content and Tab Panes
+-------------------------
+Content divided into multiple panes;
+
+<ul class="nav nav-tabs" role="tablist">
+  <li role="presentation" class="active">
+    <a href="#peter" aria-controls="home" role="tab" data-toggle="tab">Peter Pan, CEO</a> //id="peter" ; role="toggle" -> for navigation 
+  </li>
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade in active id" id="peter">//id = peter
+    <h3> Peter Pan - Chief Chef .........</h3>
+  </div>
+</div>
