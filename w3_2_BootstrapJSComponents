@@ -1,0 +1,51 @@
+Hide and Seek: Collapse, Accordion, Scrollspy and Affix
+-------------------------------------------------------
+1. Collapse
+------------
+-> Collaspe plugin provides a quick way of revealing and hiding content;
+-> Toggling of content requires the use of a button or a link to trigger the toggle;
+
+* Code
+------
+<div class="col-md-5 col-md-offset-1">
+  <div class="collapse in" id="collapseExample">
+    <div class="well">
+      <h3>Some Collapsible Content</h3>
+      <p>This is some collapsible content that will be toggled with the button on the right</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3">
+  <a class="btn btn-primary" role="button"
+  data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Toggle Info
+  </a>
+</div>
+
+----------------------
+2. Accordion
+-------------
+<div class="panel-group" id="accordion" role="tablist">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingPeter">
+      <h3 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#peter">Peter Pan
+          <small>Chief Epicurious Officer</small>
+        </a>
+      </h3>
+    </div>
+    <div role="tabpanel" class="panel-collapse collapse in" id="peter">
+      <div class="panel-body">
+      </div>
+    </div>
+  </div> 
+</div>
+-----------------------------
+3. Scrollspy and Affix
+------------------------
+* Scrollspy - It tracks the current scroll position of the web page and then reflects that by highlighting 
+the appropriate nav item in the nav element .  
+* Affix - It enables your nav element to move with the scroll, upto a certain point and after it reaches a 
+certain , then the Affix plugin will fix the position, by changing that element from relative to fixed position;
+
