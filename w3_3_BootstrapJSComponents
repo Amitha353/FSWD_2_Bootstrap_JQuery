@@ -1,0 +1,42 @@
+Revealing Content: Toolstips, Popovers and Modals
+--------------------------------------------------
+-> Revealing content upon interacting with an element on the web page;
+-> Information displayed as an overlay;
+-> Order of flexibility: Tooltip -> Popover -> Modal
+
+1. Tooltip
+-----------------
+-> Simplest way to display content - pops up when the user hovers over an element;
+-> Three attributes 
+a. data-toggle="tooltip"
+b. data-placement="top|bottom|left|right"
+c. title="message string"
+
+-> Javascript code to be included
+-------
+<script>
+  $(document).ready(function() {
+  $('[data-toggle="tooltip"]').tooltip();});
+</script>
+-------------------------------------------------------------------------------------------------------
+2. Popover
+------------
+-> Includes a title and content - pops up when the user clicks on an element;
+-> 4 attributes
+a. data-toggle = "tooltip"
+b. data-placement = "top|bottom|left|right"
+c. title = "message title"
+data-content = "message string"
+
+-> Javascript code included
+--------------
+<script>
+  $(document).ready(function() {
+  $('[data-toggle="popover"]').popover();});
+</script>
+----------------------------------------------------------------------------------------------------------------
+3. Modal
+---------
+-> More detailed information can be presented than tooltips and popovers;
+-> Modal contains header, body and footer;
+-> Can use the Bootstrap grid in the body to organize content;
