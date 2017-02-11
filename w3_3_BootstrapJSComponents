@@ -40,3 +40,54 @@ data-content = "message string"
 -> More detailed information can be presented than tooltips and popovers;
 -> Modal contains header, body and footer;
 -> Can use the Bootstrap grid in the body to organize content;
+-----------------------------------------------------------------------------------------------------------------
+Carousel
+---------
+-> Allows to present a slide show on the web page;
+-> Interesting component that allows the inclusion of a slideshow with captions; 
+-> Manual controls for the carousel;
+
+Adding Carousel
+-----------------
+<div id="mycarousel" class="carousel slide"
+data-ride="carousel">
+.......
+</div>
+
+Adding slides
+----------------
+<div class="carousel-inner" role="listbox">
+  <div class="item active">
+    <img class="img-responsive" src="..." alt="...">
+    <div alss="carousel-caption">
+      ...
+    </div>
+  </div>
+  <div class="item">
+    ...
+      <div class="carousel-caption">
+      ...
+      </div>
+  </div>
+</div>
+
+Adding Indicator Controls
+--------------------------- (Manual Controls)
+<ol class="carousel-indicators">
+  <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#mycarousel" data-slide-to="1" class="active"></li>
+  <li data-target="#mycarousel" data-slide-to="2" class="active"></li>
+</ol>
+
+Adding the Left and Right controls
+-----------------------------------
+<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</sr>
+</a>
+
+
+<a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</sr>
+</a>
