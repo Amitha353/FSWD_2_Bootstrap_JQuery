@@ -1,0 +1,137 @@
+Less is More!: Less and Sass
+----------------------------
+CSS Preprocessors: Less and Sass
+---------------------------------
+-> Bootstrap is built using Less;
+
+CSS 
+--------------
+-> used for defining styles and repeatedly applying them to various HTML elements;
+-> is limited when it comes to features like defining variables, nesting selectors, expressions, and functions;
+-> Maintainability suffers;
+
+CSS Preprocessors
+--------------------
+CSS written more in the programming style;
+
+3 popular css preprocessors
+-----------------------------
+a. Less
+b. Sass (Syntactically Awesome Style Sheet), and
+c. Stylus
+
+-> All are compiled into traditional CSS syntax automatically before use in the web page; Compilers or transformation tools
+used for the purpose;
+-> Bootstrap was originally available in Less, now also available as Sass;
+
+Typical CSS Preprocessors Features
+------------------------------------
+a. Variables
+b. Nesting selectors
+c. Mixins
+d. Functions and Expressions;
+
+
+a. Variables
+------------------
+Variables have scope;
+
+I. Less
+
+@indigo:#303f9f;
+@carousel-height:300px;
+
+.navbar-inverse {
+  background:@indigo;
+}
+
+.carousel .item {
+  height: @carousel-height;
+}
+-----------------------------------
+II. Sass
+
+$indigo:#303f9f;
+$carousel-height:300px;
+
+.navbar-inverse {
+  background:$indigo;
+}
+
+.carousel .item {
+  height: $carousel-height;
+}
+----------------------------------------------------------
+b. Nesting -> allows to nest classes; parent and child classes;
+---------------------------------
+I. Less (Sass - instead of @ use $)
+@indigo:#303f9f;
+@carousel-height:300px;
+
+.navbar-inverse {
+  background:@indigo;
+}
+
+.carousel {
+  background:@indigo;
+  .item {
+    height: @carousel-height;
+    img {
+      left: 0;
+      min-heigth: @carousel-height;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+------------------------------------------------------------------------------
+c. Mixins -> can hold multiple CSS declarations unlike variables and parameters, math operations;
+
+I. Less
+---------
+.zero-margin {
+  margin:0px auto;
+  background:@white;
+}
+
+.one-margin(@pad-up-dn:0px, @pad-left-right:0px) {
+  margin:0px auto;
+  padding: @pad-up-dn @pad-left-right;
+}
+
+.row-header {
+  .zero-margin;
+  padding:0px auto;
+}
+
+.row-content {
+  .one-margin(50px, 0px);
+  border-bottom: 1px ridge;
+  min-height: 400px;
+  padding: 50px 0px 50px 0px;
+}
+
+II. Sass
+---------
+@ mixin zero-margin {
+  margin:0px auto;
+  background:@white;
+}
+
+@ mixin one-margin(@pad-up-dn, @pad-left-right) {
+  margin:0px auto;
+  padding: @pad-up-dn @pad-left-right;
+}
+
+.row-header {
+  @include zero-margin;
+  padding:0px auto;
+}
+
+.row-content {
+  @include one-margin(50px, 0px);
+  border-bottom: 1px ridge;
+  min-height: 400px;
+  padding: 50px 0px 50px 0px;
+}
+------------------------------------------------
