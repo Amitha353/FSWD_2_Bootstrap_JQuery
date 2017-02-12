@@ -80,4 +80,4 @@ ii. slid.bs.carousel: fired when the carousel has completed its slide transition
 $("#myCarousel").on('slide.bs.carousel', function() {
   //do something
 })
-
+----------------------------------------------------------------------------------------------------------------
