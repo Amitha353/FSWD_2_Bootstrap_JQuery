@@ -1,0 +1,45 @@
+Bootstrap and JQuery
+---------------------
+-> Bootstrap and Javascript
+----------------------------
+Bootstrap's Javascript support is through JS plugins;
+- These plugins are written based on JQuery; and can be individually included;
+
+JQuery
+-----------
+a. Lightweight Javascript library;
+b. Feature-rich:
+  i. HTML/DOM manipulation
+  ii. CSS manipulation
+  iii. HTML Event methods
+  iv. Effects and animations
+  v. AJAX -> communication with the server;
+c. Bootstrap JS components build upon JQuery;
+
+
+JQuery Syntax
+--------------
+$ -> defining or access to JQuery;
+(selector) -> select a specific HTML element;
+action() -> action to be performed on the elements;
+
+$(selector).action()
+
+Example:- $("p").hide(), $("#mycarousel").carousel('pause')
+
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
+Jquery Selectors
+-------------------------
+a. Any HTML element; e.g: "p", "button", etc;
+b. Using an #id, e.g.: "#myCarousel"
+c. Class, e.g.: ".btn", ".btn.btn-default"
+d. Attribute e.g.: "[href]", "[data-toggle="tooltip"]"
+e. Current Element : $(this).
+etc;
+
+
