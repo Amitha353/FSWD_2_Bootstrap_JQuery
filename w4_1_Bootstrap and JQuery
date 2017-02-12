@@ -42,4 +42,42 @@ d. Attribute e.g.: "[href]", "[data-toggle="tooltip"]"
 e. Current Element : $(this).
 etc;
 
+JQuery Events
+---------------------
+-> User's interactions on a web page causes DOM events:
+- Mouse: click, dblclick, mouseenter, mouseleave
+- Keyboard: keypress, keydown, keyup
+- Form: submit, change, focus, blur
+- Document, Window: load, resize, scroll, unload
+
+->JQuery Event Methods: e.g: ready(), click(), dblclick(), mousedown(), on();
+
+Bootstrap Carousel
+--------------------------------------------
+-> Data Attributes
+-------------------
+i. data-slide="prev|next"
+ii. data-slide-tp="0|1|2|.."
+iii. data-ride="carousel"
+iv. data-interval=5000
+
+$('.carousel').carousel(); -> $('.carousel').carousel({interval:2000});
+
+
+Other Carousel controls
+-----------------------
+.carousel('cycle') -> cycle items left to right
+.carousel('pause') -> stops the carousel
+.carousel('number') -> cycles the carousel to a particular frame number specified
+.carousel('prev') -> previous item
+.carousel('next') -> next item
+
+
+The carousel itself fires or generates two events upon occurence of certain events within the carousel;
+i. slide.bs.carousel: fires when the slide instance method is invoked;
+ii. slid.bs.carousel: fired when the carousel has completed its slide transition;
+-> Use with the  .on() method:
+$("#myCarousel").on('slide.bs.carousel', function() {
+  //do something
+})
 
