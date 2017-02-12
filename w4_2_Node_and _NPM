@@ -1,0 +1,57 @@
+Node.js and Node Package Manager
+--------------------------------
+What is Node.js?
+----------------
+-> Node.js is a JavaScript runtime built on Chrome V8 JavaScript Engine;
+-> The Chrome V8 engine was built originally to be a part of the chrome browser and to support the Javscript that runs within 
+your browser.
+-> When you separate the engine out of the browser and let it run on your machine, you're able to support the running of the Javascript
+program on your machine;
+
+-> The node environment uses an event driven, non-blocking, I/O model which makes it very lightweight and efficient to handle primarily 
+data driven websites.
+
+Node Architecture
+-------------------
+
+---------------------------------------------------------------------------
+        Node Core/ Standard Library (JS)
+--------------------------------------------------------------------------- 
+---------------------------------------------------------------------------
+        Node Bindings (C++)
+---------------------------------------------------------------------------
+------------------------------              -------------------------------
+  Chrome V8 (C++)                               libuv (C)
+-------------------------------              -------------------------------  
+
+
+Bottom Layer -> Chrome V8 engine; Libuv - which enables interaction with the underlying computer system, and the devices;
+Middle Layer -> Node Bindings - written in C++;
+Top Layer -> Node Core/ Standard Library -> completely written in JavaScript;
+
+The Node.js Use Cases
+-----------------------
+-> The node JavaScript runtime has been used in two different ways:
+i. Utilities written in Javascript for web development ->  Bower, Grunt, Gulp, Yeoman, etc;
+
+ii. Server-Side Development -> Web Server, Business logic, Database access;
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Node Package Manager (NPM)
+---------------------------
+-> Node Package Manager (npm ) -> manages the ecosystem of node modules/ packages;
+-> A package contains:
+i. JS files
+ii. package.json (manifest)
+--------------------------------------------------------------------------------------------------------------------------------
+Install
+-> node.js ->  https://nodejs.org
+-> git bash;
+
+: On Windows machines, you may need to configure your PATH environmental variable in case you forgot to turn on the add to 
+PATH during the installation steps.
+
+Verify the versions of node and npm to confirm installation on the system , by running the below command in the command prompt.
+  node -v
+  npm -v
+----------------------------------------------------------------------------------------------------------------------------------------
